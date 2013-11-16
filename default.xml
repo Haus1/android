@@ -15,9 +15,17 @@
            review="gerrit.omnirom.org"
            fetch="https://github.com/omnirom" />
 
+  <remote  name="haus1"
+           fetch="https://github.com/Haus1" />
+
   <default revision="refs/tags/android-4.4_r1.1"
            remote="aosp"
-           sync-j="4" />
+           sync-j="32" />
+
+<!-- Evo LTE repos -->
+  <project path="device/htc/jewel" name="android_device_htc_jewel" remote="haus1" revision="android-4.4_tst" groups="device,jewel" />
+  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="haus1" revision="android-4.4" />
+<!-- Evo LTE repos -->
 
   <project path="build" name="android_build" remote="omnirom" revision="android-4.4" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -292,7 +300,7 @@
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="omnirom" revision="android-4.4" />
-  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="omnirom" revision="android-4.4" />
+<!--  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="omnirom" revision="android-4.4" />  -->
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="omnirom" revision="android-4.4" />
   <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" remote="omnirom" revision="android-4.4" />
