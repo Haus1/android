@@ -18,14 +18,18 @@
   <remote  name="haus1"
            fetch="https://github.com/Haus1" />
 
-  <default revision="refs/tags/android-4.4_r1.1"
+  <default revision="refs/tags/android-4.4_r1.2"
            remote="aosp"
            sync-j="32" />
 
 <!-- Evo LTE repos -->
   <project path="device/htc/jewel" name="android_device_htc_jewel" remote="haus1" revision="android-4.4_tst" groups="device,jewel" />
-  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="haus1" revision="android-4.4" />
-  <project path="vendor/htc" name="proprietary_vendor_htc" remote="haus1" revision="android-4.4"
+
+  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="haus1" revision="qcom-4.4_2.7" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="omnirom" revision="qcom-4.4_2.7" />
+  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="omnirom" revision="qcom-4.4_2.7" />
+
+  <project path="vendor/htc" name="proprietary_vendor_htc" remote="haus1" revision="android-4.4" />
 <!-- Evo LTE repos -->
 
   <project path="build" name="android_build" remote="omnirom" revision="android-4.4" groups="pdk" >
@@ -261,7 +265,7 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-4.4" />
+<!--  <project path="frameworks/av" name="android_frameworks_av" remote="omnirom" revision="android-4.4" /> -->
   <project path="frameworks/base" name="android_frameworks_base" remote="omnirom" revision="android-4.4" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -297,7 +301,7 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="omnirom" revision="android-4.4" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="omnirom" revision="android-4.4" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="omnirom" revision="android-4.4" />
-  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="omnirom" revision="android-4.4" />
+<!--  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="omnirom" revision="android-4.4" /> -->
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="omnirom" revision="android-4.4" />
